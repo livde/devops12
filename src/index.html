@@ -1,5 +1,111 @@
-<html>
-  <body>
-    <h1>Hola Mundo</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Tenis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h1 {
+            color: #333;
+            font-size: 2rem;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-around;
+        }
+        .product {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin: 1rem 0 0.5rem;
+        }
+        .product p {
+            color: #666;
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+        .price {
+            color: #27ae60;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Tenis</h1>
+        <p>Encuentra los mejores modelos de tenis a precios accesibles</p>
+    </header>
+
+    <div class="container">
+        <h2>Productos Destacados</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Tenis modelo A">
+                <h3>Modelo A</h3>
+                <p>Tenis de alta calidad para un estilo único</p>
+                <div class="price">$89.99</div>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Tenis modelo B">
+                <h3>Modelo B</h3>
+                <p>Perfectos para deportes y uso diario</p>
+                <div class="price">$75.99</div>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Tenis modelo C">
+                <h3>Modelo C</h3>
+                <p>Comodidad y diseño en cada paso</p>
+                <div class="price">$65.99</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Tenis. Todos los derechos reservados.</p>
+    </footer>
+</body>
 </html>
+
